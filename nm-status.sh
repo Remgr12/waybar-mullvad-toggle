@@ -15,7 +15,7 @@ output_status() {
 
 # Check if the NetworkManager connection is active
 if nmcli connection show --active | grep -q "${CONNECTION_NAME}"; then
-  output_status "connected" "Connected: ${CONNECTION_NAME}"
+  output_status "connected" "Connected"
 else
-  output_status "disconnected" "Disconnected: ${CONNECTION_NAME}"
+  output_status "disconnected" "Disconnected"
 fi
